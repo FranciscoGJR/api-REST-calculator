@@ -15,12 +15,9 @@ import com.jr.api.repository.ClienteRepository;
 public class ClienteController {
 
 
-
     // ACESSO AO BANCO
     @Autowired
     private ClienteRepository clienteRepository;
-	
-
 
     
     //GET 
