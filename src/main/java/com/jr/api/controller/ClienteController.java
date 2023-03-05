@@ -14,17 +14,18 @@ import com.jr.api.repository.ClienteRepository;
 @RequestMapping("/hello")
 public class ClienteController {
 
+
+
+    // ACESSO AO BANCO
     @Autowired
     private ClienteRepository clienteRepository;
 	
 
 
-    //Getters
-	@GetMapping
-	public List<Cliente> lista(){
+    
+    //GET 
+    @GetMapping 
+    public List<Cliente> lista(){ 
         return clienteRepository.findAll();
 	}
-
-		
-	
 }
