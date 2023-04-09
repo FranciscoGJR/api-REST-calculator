@@ -1,16 +1,9 @@
 package com.jr.api.model;
 
+import java.time.LocalDate;
+
 public class Client{
 
-	public Client(Long id, String name, String lastName, String gander, String address, Long balance) {
-		this.id = id;
-		this.name = name;
-		this.lastName = lastName;
-		this.gander = gander;
-		this.address = address;
-		this.balance = balance;
-	}
-	
 	// TABLE
 	private Long id;
 	private String name;
@@ -18,8 +11,9 @@ public class Client{
 	private String gander;
 	private String address;
 	private Long balance;
+	private LocalDate dateBirth;
 
-	
+
 	//GETTERS
 	public Long getId() {
 		return id;
@@ -45,6 +39,9 @@ public class Client{
 		return lastName;
 	}
 
+	public LocalDate getDateBirth() {
+		return dateBirth;
+	}
 	
 	//SETTERS
 	public void setId(Long i) {
@@ -69,6 +66,10 @@ public class Client{
 
 	public void setAddress(String address) {
 		this.address = address;
+	}
+	
+	public void setDateBirth(LocalDate dateBirth) {
+		this.dateBirth = dateBirth;
 	}
 
 }
